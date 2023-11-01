@@ -1,0 +1,24 @@
+﻿@using System.IO;
+@model Product
+
+
+<div class="col-4">
+
+    <div class="card">
+
+
+        <img src="/images/@(Model.Id)@Model.FileExtension" height="160" width="160" class="card-img-top img-thumbnail" />
+
+        <div class="card-body">
+
+            <h5 class="card-title">@Model.Name</h5>
+            <a asp-action="Detail"
+               asp-controller="Home"
+               asp-route-id="@Model.Id">
+                جزییات محصول
+
+            </a>
+        </div>
+    </div>
+
+</div>
