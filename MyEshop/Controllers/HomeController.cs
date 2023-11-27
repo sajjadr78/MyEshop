@@ -29,8 +29,7 @@ namespace MyEshop.Controllers
         {
             var products = _context.Products
                 .ToList();
-            //return View(products);
-            return View("ShowCart");
+            return View(products);
 
         }
 

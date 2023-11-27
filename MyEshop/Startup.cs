@@ -34,7 +34,9 @@ namespace MyEshop
             #region Db Context
 
             services.AddDbContext<MyEshopContext>(options =>
-                { options.UseSqlServer("Data Source =.;Initial Catalog=EshopCore_DB;Integrated Security=true"); });
+                { 
+                    options.UseSqlServer("Data Source =.;Initial Catalog=EshopCore_DB;Integrated Security=true"); 
+                });
 
             #endregion
 
